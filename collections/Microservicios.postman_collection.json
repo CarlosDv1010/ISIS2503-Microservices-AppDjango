@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "1b92d085-1dc2-4d1e-80ff-0b9726517a52",
+		"_postman_id": "90d57e8d-87cb-4620-b418-dca2d6ad799f",
 		"name": "Microservicios",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "23312038"
+		"_exporter_id": "29104017"
 	},
 	"item": [
 		{
@@ -84,7 +84,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Temperatura\",\r\n    \"data\": \"\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Oxigeno\",\r\n    \"data\": \"\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -92,13 +92,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://34.171.66.152:8080/variablecreate/",
+							"raw": "http://34.68.44.66:8080/variablecreate/",
 							"protocol": "http",
 							"host": [
 								"34",
-								"171",
-								"66",
-								"152"
+								"68",
+								"44",
+								"66"
 							],
 							"port": "8080",
 							"path": [
@@ -119,7 +119,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Temperatura\",\r\n    \"data\": \"\"\r\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -138,78 +138,6 @@
 							"port": "8080",
 							"path": [
 								"variables",
-								""
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Places",
-			"item": [
-				{
-					"name": "Create Place",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Oxígeno\",\r\n    \"data\": \"\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://34.171.66.152:8080/placecreate/",
-							"protocol": "http",
-							"host": [
-								"34",
-								"171",
-								"66",
-								"152"
-							],
-							"port": "8080",
-							"path": [
-								"placecreate",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get Places",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Oxigeno\",\r\n    \"data\": \"\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://34.171.66.152:8080/places/",
-							"protocol": "http",
-							"host": [
-								"34",
-								"171",
-								"66",
-								"152"
-							],
-							"port": "8080",
-							"path": [
-								"places",
 								""
 							]
 						}
@@ -263,7 +191,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"variable\": 1,\r\n    \"value\": 24,\r\n    \"unit\": \"C\",\r\n    \"place\": \"ML\"\r\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -314,6 +242,78 @@
 							"port": "8080",
 							"path": [
 								"createmeasurements",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Places",
+			"item": [
+				{
+					"name": "Create Place",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ML-101\",\r\n    \"data\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://34.123.62.22:8080/placecreate/",
+							"protocol": "http",
+							"host": [
+								"34",
+								"123",
+								"62",
+								"22"
+							],
+							"port": "8080",
+							"path": [
+								"placecreate",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Places",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://34.123.62.22:8080/places/",
+							"protocol": "http",
+							"host": [
+								"34",
+								"123",
+								"62",
+								"22"
+							],
+							"port": "8080",
+							"path": [
+								"places",
 								""
 							]
 						}
